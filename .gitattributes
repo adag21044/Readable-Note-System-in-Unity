@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# C# dosyalarını ana dil olarak ayarlamak
+*.cs linguist-language=CSharp
+
+# Diğer potansiyel shader veya meta dosyalarını hariç tutmak
+*.shader linguist-vendored
+*.hlsl linguist-vendored
+*.cginc linguist-vendored
+*.compute linguist-vendored
+*.meta linguist-detectable=false
